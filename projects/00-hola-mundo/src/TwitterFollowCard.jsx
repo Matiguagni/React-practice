@@ -33,7 +33,10 @@ const buttonClassName = isFollowing
         </header>
         <aside>
             <button className={buttonClassName} onClick={handleClick}>
-                {text}
+                <span className='tw-follow-Card-text'>{text} </span>
+                <span className='tw-follow-Card-stopFollow'> 
+                    Dejar de seguir
+                </span>
             </button>
         </aside>
       </article> 
