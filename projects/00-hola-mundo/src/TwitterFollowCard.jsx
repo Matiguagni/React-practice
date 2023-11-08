@@ -1,5 +1,6 @@
-export function TwitterFollowCard ({userName, name, isFollowing}) {
-const imageSrc = `https://unavatar.io/twitter/${userName}`   
+export function TwitterFollowCard ({formatUserName, userName, name, isFollowing}) {
+const imageSrc = `https://unavatar.io/twitter/${userName}`
+   
 
     return (
         <article className='tw-follow-Card'    >
@@ -12,7 +13,7 @@ const imageSrc = `https://unavatar.io/twitter/${userName}`
             src= {imageSrc} />
             <div className='tw-follow-Card-info'>
                 <strong>{name}</strong>
-                <span className='tw-follow-Card-infoUserName'>@{userName}</span>
+                <span className='tw-follow-Card-infoUserName'>{formatUserName(userName)}</span>
             </div>
 
         </header>
